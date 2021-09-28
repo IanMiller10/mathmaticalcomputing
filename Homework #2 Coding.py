@@ -1,15 +1,8 @@
 # -*- coding: utf-8 -*-
 # *** Spyder Python Console History Log ***
 
-## ---(Wed Sep 22 21:36:12 2021)---
-import turtle
-from turtle import *
-forward(100)
-right(90)
-forward(100)
-
 ## ---(Mon Sep 27 20:02:20 2021)---
-#Scalar Vector Multiplication
+#Scalar Vector Multiplication #1
 #We will multiply a vector named a_1 by a scalar named b
 #We will store our result in a vector named my_result
 import numpy as np
@@ -29,9 +22,9 @@ b=4
 my_array = np.array(a_1)
 a_2 = my_array * b
 print (a_2)
-end
 END
-#Scalar Matrix Multiplication
+
+#Scalar Matrix Multiplication #2
 #We will multiply a matrix named a_1 by scalar b
 #We will store the result in a matrix named a_2
 import numpy as np
@@ -48,7 +41,8 @@ a_1 = np.array([[9,10],[11,12]])
 b=5
 a_2 = b*a_1
 print(a_2)
-#Matrix Addition
+
+#Matrix Addition #3
 #We will add two matrices names matrix_1 and matrix_2
 #We will store the result in a matrix named matrix_result
 import numpy as np
@@ -65,7 +59,8 @@ matrix_1 = ([[15,16,17],[17,18,19]])
 matrix_2 = ([[17,18,19],[19,20,21]])
 matrix_result = np.add(matrix_1,matrix_2)
 print(matrix_result)
-#Matrix Vector Multiplication using the Linear Combination of Columns
+
+#Matrix Vector Multiplication using the Linear Combination of Columns #4
 #We will multiply a matrix named matrix_1 with a vector named vector_1
 #We will transpose vector_1 to use the Linear Combination of Columns
 #We will store the result in an array called result_array
@@ -82,7 +77,8 @@ vector_1 = [7,9,11]
 vector_1trans = np.transpose(vector_1)
 result_array = np.linalg.solve(matrix_1,vector_1trans)
 print(result_array)
-#Matrix Matrix Multiplication
+
+#Matrix Matrix Multiplication #5
 #We will multiply two matrices named matrix_1 and matrix_2
 #We will store the result in a matrix named matrix_result
 import numpy as np
