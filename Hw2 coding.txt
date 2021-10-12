@@ -13,7 +13,6 @@ def scalar_vector_a_multi_overwrite(vector_a, scalar):
         result[index] = vector_a[index] * scalar
         return result
         
-
 test_vector_a = [1,2,3]
 
 test_scalar = 3
@@ -24,7 +23,6 @@ Test Output for multiplying a vector by a scalar  :[3, 0, 0]
 
 print ('Should have been [3,6,9]')
 Should have been [3,6,9]
-
 
 
 test_vector_a = [2,3,4]
@@ -39,26 +37,21 @@ print ('Should have been [3,6,9]')
 Should have been [3,6,9]
 
 
+
+
+
 #We will multiply a matrix and a scalar
 
 def scalar_matrix_A_multi(matrix_A, scalar):
     #Set the matrix as a list of lists
     matrix_A = [[],[]]
     
-
-
-
-
-
-
 #Each member of the matrix is multiplied by the scalar
 
 for columns in range(len(matrix_A)):
     for rows in range(len(matrix_A[0])):
         matrix_A [columns][rows] = matrix_A [columns][rows]*A
         
-
-
 
 test_matrix_A = [[2,4,5],[1,3,5]]
 
@@ -72,8 +65,7 @@ Test Output for multiplying a vector by a scalar  :None
 print ('Should have been [[4,8,10],[2,6,10]])
 
 
- 
-test_matrix_A = [[3,5,6],[3,5,7]]
+ test_matrix_A = [[3,5,6],[3,5,7]]
 
 test_scalar = 4
 
@@ -110,7 +102,6 @@ print (' Should have been [[3,7,10],[3,7,10]]')
  Should have been [[3,7,10],[3,7,10]]
 
 
-
 test_matrix_A = [[3,5,6],[3,5,7]]
 
 test_matrix_B = [[3,5,7],[3,5,6]]
@@ -121,6 +112,7 @@ str(add_matrix_A_matrix_B(test_matrix_A, test_matrix_B)))
 
 print (' Should have been [[3,7,10],[3,7,10]]')
  Should have been [[3,7,10],[3,7,10]]
+
 
 
 
@@ -161,7 +153,11 @@ print (' Should have been [[16],[4],[7]]')
  Should have been [[16],[4],[7]]
  
  
- #implement matrix-matrix multiplication
+
+
+
+
+#implement matrix-matrix multiplication
 
 def matrix_A_matrix_B_multi(matrix_A,matrix_B):
     #Set the matrix_A as a list of lists
