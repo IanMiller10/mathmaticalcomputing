@@ -1,0 +1,211 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 14 11:47:13 2021
+
+@author: mille
+"""
+
+
+#Problem 0
+from typing import List
+
+import pytest
+
+
+def add_vectors(vector_a: List,
+                vector_b: List) -> List:
+    """Adds the two input vectors. 
+    
+    Creates a result vector stored as a list of 0's the same length as the input
+    then overwrites each element of the result vector
+    
+    Args: 
+        vector_a: a vector stored as a list.
+        vector_b: a vector, the same length as vector_a, stored as a list.
+        
+    Return:  The sum of the input vectors stored as a list. 
+    """
+    
+    sum: List = [0 for element in vector_a]
+    for i in range(len(sum)):
+        sum[i] = vector_a[i] + vector_b[i]
+        
+    return sum
+
+#test 1
+#Vector values 
+
+vector_a = [2, 4, 6]
+vector_b = [1, 3, 5]
+
+
+print("Vector a = ", vector_a)
+print("Vector b = ", vector_b)
+
+sum: List = [0 for element in vector_a]
+for i in range(len(sum)):
+    sum[i] = vector_a[i] + vector_b[i]
+          
+print("Vector Addition = ", sum)
+
+
+    
+#test 2
+#Vector values 
+
+vector_a = [3, 4, 5]
+vector_b = [2, 3, 4]
+
+
+print("Vector a = ", vector_a)
+print("Vector b = ", vector_b)
+
+sum: List = [0 for element in vector_a]
+for i in range(len(sum)):
+    sum[i] = vector_a[i] + vector_b[i]
+          
+print("Vector Addition = ", sum)
+
+
+
+
+
+#end Problem 0
+
+
+
+
+#Problem 1
+from typing import List
+
+import pytest
+
+
+def multiple_scalarvector(vector_a, scalar):
+    """multiplies vector_a by a scalar.   
+    
+    Creates a product vector stored as a list of 0's the same length as the input
+    then overwrites each element of the product vector
+    
+    Args: 
+        vector_a: a vector stored as a list.
+        scalar: a scalar 
+        
+    Return:  the product of a vector and a scalar.
+    """
+#Initializing the result vector as an empty list the same size as vector_a
+    prod: List = [0 for element in vector_a]
+    for i in range(len(prod)):
+        prod[i] = vector_a[i] * scalar
+        
+    return prod
+
+#test 1
+#Vector and scalar values 
+
+vector_a = [2, 4, 6]
+scalar = 3
+
+
+print("Vector a = ", vector_a)
+print("Scalar = ", scalar)
+
+prod: List = [0 for element in vector_a]
+for i in range(len(prod)):
+    prod[i] = vector_a[i] * scalar
+          
+print("Vector Scalar Product = ", prod)
+
+
+    
+#test 2
+#Vector and scalar values 
+
+vector_a = [1, 3, 5]
+scalar = 5
+
+print("Vector a = ", vector_a)
+print("Scalar = ", scalar)
+
+prod: List = [0 for element in vector_a]
+for i in range(len(prod)):
+    prod[i] = vector_a[i] * scalar
+          
+print("Vector Scalar Product = ", prod)
+
+
+
+#end Problem 1
+
+
+
+#Problem 2
+from typing import List
+
+import pytest
+
+
+def multiple_scalar_mat(matrix_a, scalar):
+    """multiplies matrix_a by a scalar.   
+    
+    Creates a product matrix that is a result of the matrix column multiplied by a 
+    scalar, then overwrites each element of the column matrix
+    
+    Args: 
+        matrix_a: a matrix stored as a list of lists.
+        scalar: a scalar 
+        
+    Return:  the product of a matrix and a scalar.
+    """
+#Initializing list of lists
+test_list = [[2, 4, 6], 
+             [8, 10, 12],
+             [1, 1, 1]]
+
+
+#
+
+#Initializing the result vector as an empty list the same size as vector_a
+prod: List = [0 for element in matrix_a]
+for i in range(len(prod)):
+        prod[i] = matrix_a[i] * scalar
+        
+    return prod
+
+#test 1
+#Matrix and scalar values 
+
+matrix_a = [2, 4, 6]
+scalar = 3
+
+
+print("Matrix a = ", matrix_a)
+print("Scalar = ", scalar)
+
+prod: List = [0 for element in matrix_a]
+for i in range(len(prod)):
+    prod[i] = matrix_a[i] * scalar
+          
+print("Matrix Scalar Product = ", prod)
+
+
+    
+#test 2
+#Matrix and scalar values 
+
+matrix_a = [1, 3, 5]
+scalar = 5
+
+print("Matrix a = ", matrix_a)
+print("Scalar = ", scalar)
+
+prod: List = [0 for element in matrix_a]
+for i in range(len(prod)):
+    prod[i] = matrix_a[i] * scalar
+          
+print("Matrix Scalar Product = ", prod)
+
+
+
+#end Problem 2
+
